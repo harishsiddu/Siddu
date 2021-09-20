@@ -10,7 +10,7 @@ node {
         withCredentials([string(credentialsId: 'Dockerhubid', variable: 'DockerHubPass')]) {
            sh 'docker login -u harishsiddu -p ${DockerHubPass}'
         }
-        sh 'docker push harishsiddu/devarapalli:2.0.0'
+        sh 'docker push harishsiddu/devarapalli:3.0.0'
     }
 
 }
