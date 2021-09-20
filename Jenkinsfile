@@ -4,7 +4,7 @@ node {
         
     }
     stage("Building the image"){
-        sh 'docker build . -t harishsiddu/devarapalli:2.0.0'  
+        sh 'docker build . -t harishsiddu/devarapalli:3.0.0'  
     }
     stage("Pushing  the image"){
         withCredentials([string(credentialsId: 'Dockerhubid', variable: 'DockerHubPass')]) {
